@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorDecoder (CD)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>ColorDecoder (CD)</h1>
+
+        <input type="file" id="imageInput" accept="image/*">
+
+        <div class="controls">
+            <button id="eyedropperBtn" disabled>🖌️ Inspect Image</button>
+        </div>
+
+        <div class="canvas-container">
+            <canvas id="imageCanvas"></canvas>
+        </div>
+
+        <div class="color-info">
+            <div id="colorPreview" class="preview-box"></div>
+            <div class="details">
+                <p><strong>HEX:</strong> <span id="hexValue">#------</span></p>
+                <p><strong>RGB:</strong> <span id="rgbValue">rgb(-, -, -)</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
